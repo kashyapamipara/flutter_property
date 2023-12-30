@@ -113,22 +113,11 @@ class HeaderView extends StatelessWidget {
                         InkWell(
                           onTap: suffixIconOnTap,
                           child: Icon(
-                            Icons.pin_drop,
+                            Icons.logout,
                             color: AppColors.WHITE_COLOR,
                             size: 30,
                           ),
                         ),
-                        SizedBox(width: 4.w),
-                        InkWell(
-                          onTap: avatarOnTap,
-                          child: CircleAvatar(
-                            radius: 5.w,
-                            backgroundColor: AppColors.SECONDARY_COLOR,
-                            foregroundImage: networkImage ??
-                                const NetworkImage(
-                                    'https://picsum.photos/id/237/200/300'),
-                          ),
-                        )
                       ],
                     )
                 ],

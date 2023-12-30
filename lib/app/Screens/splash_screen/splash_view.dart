@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_property/app/Constants/app_strings.dart';
 import 'package:flutter_property/app/Screens/splash_screen/splash_controller.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:sizer/sizer.dart';
 
 import '../../Constants/color.dart';
 
@@ -19,41 +21,18 @@ class _SplashViewState extends State<SplashView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: AppColors.PRIMARY_COLOR,
-        body: Column(
-          children: [
-            Text('1232456'),
-            Row(
-              children: [
-                for (int i = 1; i < 4; i++) NumberBubble(i),
-              ],
-            ),
-            Row(
-              children: [
-                for (int i = 4; i < 7; i++) NumberBubble(i),
-              ],
-            ),
-            Row(
-              children: [
-                for (int i = 6; i < 10; i++) NumberBubble(i),
-              ],
-            ),
-            Center(
-              child: NumberBubble(0),
-            )
-          ],
-        ));
-  }
-
-  Widget NumberBubble(int number) {
-    return Container(
-      height: 10,
-      width: 10,
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(12),
+      backgroundColor: AppColors.PRIMARY_COLOR,
+      body: Container(
+        clipBehavior: Clip.antiAliasWithSaveLayer,
+        height: Get.height,
+        alignment: Alignment.center,
+        width: Get.height,
+        decoration: const BoxDecoration(color: Colors.green),
+        child: Text(
+          AppStrings.hello,
+          style: TextStyle(color: AppColors.WHITE_COLOR, fontSize: 30.sp),
+        ),
       ),
-      child: Text(number.toString()),
     );
   }
 }

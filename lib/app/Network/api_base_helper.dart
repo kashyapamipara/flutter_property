@@ -87,7 +87,7 @@ class ApiBaseHelper {
   static dynamic requestInterceptor(RequestOptions options, RequestInterceptorHandler handler) async {
     // Get your JWT token
 
-    options.headers.addAll({"Authorization": "Bearer ${getData(AppConstance.authorizationToken)}"});
+    options.headers.addAll({"Authorization": "${getData(AppConstance.authorizationToken)}"});
 
     return handler.next(options);
   }

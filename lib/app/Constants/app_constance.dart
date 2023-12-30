@@ -1,8 +1,9 @@
 class AppConstance {
   static const authorizationToken = "authorizationToken";
-  static const businessID = "businessID";
-  static const currentUserPersonID = "currentUserPersonID";
-  static const currentUserPersonName = "currentUserPersonName";
-  static const profilePhotoURL = "profilePhotoURL";
+  static const role = "role";
+  static const email = "email";
+  static const name = "name";
+  static const contactNumber = "contactNumber";
+
 
 }

@@ -2,15 +2,17 @@
 
 A new Flutter project.
 
-## Getting Started
+Flutter version:3.3.2
 
-This project is a starting point for a Flutter application.
+Screens:
+   Register Screen :  signup user
+   Login Screen : login user
+   Property Screen: List of all property added by the admin
+   Add property : we can add property from this screen
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+User Journey:
+1) User register with our system and redirected to login page where they can login in our system(Please turn on the switch if you want to register as admin)
+2) After login they can add property from add button if they are admin.
+3) User can search(property name) or filter(type and price) from property screen
+4) User can tap on any two property and can find the distance between them.
+   

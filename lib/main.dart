@@ -4,14 +4,15 @@ import 'package:get_storage/get_storage.dart';
 import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
 import 'app/Constants/app_fonts.dart';
-import 'app/Constants/app_strings.dart';
 import 'app/Constants/color.dart';
 import 'app/Routes/app_pages.dart';
 import 'app/Widget/size_config.dart';
 import 'app/initial_binding.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   await GetStorage.init();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
       .then((_) {

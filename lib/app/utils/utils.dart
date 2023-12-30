@@ -10,7 +10,7 @@ class Logger {
 
   static var logIcon = '✏️';
 
-  static void printLog({var tag = 'PayrollEzy', var printLog = '', var logIcon = 'ℹ️'}) {
+  static void printLog({var tag = 'flutter_property', var printLog = '', var logIcon = 'ℹ️'}) {
     if (true) {
       Logger.logIcon = logIcon;
       Logger.tag = tag;
