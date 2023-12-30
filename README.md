@@ -5,10 +5,10 @@ A new Flutter project.
 Flutter version:3.3.2
 
 Screens:
-   Register Screen :  signup user
-   Login Screen : login user
-   Property Screen: List of all property added by the admin
-   Add property : we can add property from this screen
+ 1)  Register Screen :  signup user
+2) Login Screen : login user
+ 3)  Property Screen: List of all property added by the admin
+4)   Add property : we can add property from this screen
 
 User Journey:
 1) User register with our system and redirected to login page where they can login in our system(Please turn on the switch if you want to register as admin)
