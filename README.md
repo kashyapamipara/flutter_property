@@ -15,4 +15,6 @@ User Journey:
 2) After login they can add property from add button if they are admin.
 3) User can search(property name) or filter(type and price) from property screen
 4) User can tap on any two property and can find the distance between them.
+5)  5) Please replace baseurl(api_url.dart file) to your node end point url to point the backend.
+
    
